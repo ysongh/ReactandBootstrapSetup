@@ -1,10 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route  } from 'react-router-dom';
 
+import Landing from './components/Landing';
+import Stories from './components/Stories';
+
 function App() {
   return (
     <Router>
-      <h1>Voice Over Virus</h1>
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/stories" component={Stories} />
     </Router>
   );
 }
